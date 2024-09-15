@@ -258,7 +258,7 @@ const Todo = () => {
         <ul style={{ listStyleType: 'none', padding: 0 }}>
           {todos.length > 0 ? (
             todos.map((todo, index) => (
-              <li key={${todo.id}-${todo.timestamp}} style={{ marginBottom: '10px' }}>
+              <li key={`${todo.id}-${todo.timestamp}`} style={{ marginBottom: '10px' }}>
                 <Card
                   style={{
                     display: 'flex',
